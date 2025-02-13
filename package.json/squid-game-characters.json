@@ -1,0 +1,65 @@
+{
+    "characters": [
+      {
+        "id": 1,
+        "name": "Seong Gi-hun",
+        "koreanName": "성기훈",
+        "playerNumber": "456",
+        "role": "Main Protagonist",
+        "occupation": "Chauffeur/Gambler",
+        "status": "Survived/Winner",
+        "age": 47,
+        "significance": "Final winner of the game",
+        "imageUrl": "/public/seong-gi-hun.png"
+      },
+      {
+        "id": 2,
+        "name": "Cho Sang-woo",
+        "koreanName": "조상우",
+        "playerNumber": "218",
+        "role": "Deuteragonist/Antagonist",
+        "occupation": "Investment Banker",
+        "status": "Deceased",
+        "age": 46,
+        "significance": "Gi-hun's childhood friend turned rival",
+        "imageUrl": "/public/cho-sang-woo.png"
+      },
+      {
+        "id": 3,
+        "name": "Kang Sae-byeok",
+        "koreanName": "강새벽",
+        "playerNumber": "067",
+        "role": "Main Character",
+        "occupation": "North Korean Defector",
+        "status": "Deceased",
+        "age": 26,
+        "significance": "Trying to reunite with her family",
+        "imageUrl": "/public/kang-sae-byeok.png"
+      },
+      {
+        "id": 4,
+        "name": "Oh Il-nam",
+        "koreanName": "오일남",
+        "playerNumber": "001",
+        "role": "Secret Antagonist",
+        "occupation": "Game Host/VIP",
+        "status": "Deceased",
+        "age": 77,
+        "significance": "Creator of the games",
+        "imageUrl": "/public/oh-il-nam.png"
+      },
+      {
+        "id": 5,
+        "name": "Jang Deok-su",
+        "koreanName": "장덕수",
+        "playerNumber": "101",
+        "role": "Antagonist",
+        "occupation": "Gangster",
+        "status": "Deceased",
+        "age": 40,
+        "significance": "Violent gang leader",
+        "imageUrl": "/public/jang-deok-su.png"
+      }
+
+    ]
+  }
