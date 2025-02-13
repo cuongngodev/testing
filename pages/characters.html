@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous">
+    </script>
+    <script src="../scripts/characters.js"></script>
+    <script src="../scripts/gameplay.js"></script>
+    <link rel="stylesheet" href="../styles/game-design.css">
+    <title>Characters</title>
+</head>
+<body>
+    <div class="game-phase-container"> 
+
+        <div class="game-branding">
+            <img src="/logo/peekaboom_logo.jpg" alt="Game Logo" class="game-logo">
+            <h1>PeeKaBoom</h1>
+        </div>
+        <!-- Header Page -->
+        <div class="character-selection">
+            <div class="players-container">
+                <!-- Player 1 Display -->
+                <div class="player-card" id="player1Display">
+                    <div class="player-header">
+                        <h2>Player 1</h2>
+                    </div>
+                    <div class="player-info">
+                        <div class="profile-image">
+                            <img id="player1Image" src="" alt="Player 1">
+                        </div>
+                        <div class="player-details">
+                            <p>Name: <span id="player1Name"></span></p>
+                            <p>Age: <span id="player1Age"></span></p>
+                        </div>
+                    </div>
+                </div>           
+                <!-- Player 2 Display -->
+                <div class="player-card" id="player2Display">
+                    <div class="player-header">
+                        <h2>Player 2</h2>
+                    </div>
+                    <div class="player-info">
+                        <div class="profile-image">
+                            <img id="player2Image" src="" alt="Player 2">
+                        </div>
+                        <div class="player-details">
+                            <p>Name: <span id="player2Name"></span></p>
+                            <p>Age: <span id="player2Age"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Characters Selection -->
+            <div class="character-grid">
+                <div id="select-turn" ></div>
+                <div class="squid-characters">
+                    <div class="character-item">
+                        <img src="" alt="Character 1" id="char1">
+                    </div>
+                    <div class="character-item">
+                        <img src="" alt="Character 2" id="char2">
+                    </div>
+                    <div class="character-item">
+                        <img src="" alt="Character 3" id="char3">
+                    </div>
+                    <div class="character-item">
+                        <img src="" alt="Character 4" id="char4">
+                    </div>
+                </div>
+                <div class="pokemon-characters">
+                    <div class="character-item">
+                        <img src="" alt="Character 5" id="char5">
+                    </div>
+                    <div class="character-item">
+                        <img src="" alt="Character 6" id="char6">
+                    </div>
+                    <div class="character-item">
+                        <img src="" alt="Character 7" id="char7">
+                    </div>
+                    <div class="character-item">
+                        <img src="" alt="Character 8" id="char8">
+                    </div>
+                </div>
+            </div>
+            <button id="character-confirm">Select</button>
+        </div>
+        <!-- Game Play Window -->
+        <div id="game-container">
+            <!-- <div id="difficulty">
+                <button onclick="setDifficulty('easy')">Easy (20s)</button>
+                <button onclick="setDifficulty('hard')">Hard (15s)</button>
+            </div> -->
+            <div id="timer">Time: <span id="timeDisplay">0</span></div>
+            <!-- <h1 id="game-title">Baby Learn to Walk</h1> -->
+            <div id="game-area">
+                <img id="pikachu" src="" alt="Pikachu">
+                <div id="finish-line"></div>
+                <div id="player1" class="player">
+                    <img src="" alt="Player 1">
+                </div>
+                <div id="player2" class="player">
+                    <img src="" alt="Player 2">
+                </div>
+            </div>
+            <div id="status" class="statusPlay">Press Start to begin!</div>
+            <div class="game-controls">
+                <div id="difficulty">
+                    <button onclick="setDifficulty('easy')">Easy (20s)</button>
+                    <button onclick="setDifficulty('hard')">Hard (15s)</button>
+                </div>
+                <div id="status">Press Start to begin!</div>
+                <div id="controls">
+                    Player 1: Right Arrow Key<br>
+                    Player 2: D Key
+                </div>
+                <button id="start-btn" onclick="startGame()">Start Game</button>
+                <button id="restart-btn" onclick="resetGame()">Play Again</button>
+            </div>
+            <!-- <div id="status">Press Start to begin!</div>
+            <div id="controls">
+                Player 1: Right Arrow Key<br>
+                Player 2: D Key
+            </div>
+            <button id="start-btn" onclick="startGame()">Start Game</button>
+            <button id="restart-btn" onclick="resetGame()">Play Again</button> -->
+        </div>
+    </div>
+
+</body>
+</html>
