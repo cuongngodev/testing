@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous">
+    </script>
+    <script src="../scripts/form.js"></script>
+    <link rel="stylesheet" href="../styles/game-design.css">
+
+    <title>Welcome to PeeKaBoom</title>
+</head>
+<body>
+    <div class="game-phase-container">
+        <div class="game-branding">
+            <img src="/logo/peekaboom_logo.jpg" alt="Game Logo" class="game-logo">
+            <h1>PeeKaBoom</h1>
+        </div>
+        <button id="togglePlayer2">Add/Remove Player 2</button>
+        <div class="container">
+    
+            <div class="playerInfo" id="player1Container">
+                <h2>Player 1</h2>
+                <form id="player1Form">
+                    <label for="player1Name"></label>
+                    <input type="text" id="player1Name" name="player1Name" placeholder="Enter your name">
+                    <p id="player1NameWarningMessage" class="warning">Name field cannot be empty.</p>
+                    <br>
+                    <label for="player1Age"></label>
+                    <input type="number" id="player1Age" name="player1Age" placeholder="Enter your age">
+                    <p id="player1AgeWarningMessageEmpty" class="warning">Age field cannot be empty.</p>
+                    <p id="player1AgeWarningMessageValue" class="warning">Invalid Age.</p>
+                    <br>
+                </form>
+            </div>
+    
+            <div class="playerInfo" id="player2Container">
+                <h2>Player 2</h2>
+                <form id="player2Form">
+                    <label for="player2Name"></label>
+                    <input type="text" id="player2Name" name="player2Name" placeholder="Enter your name">
+                    <p id="player2NameWarningMessage" class="warning">Name field cannot be empty.</p>
+                    <br>
+                    <label for="player2Age"></label>
+                    <input type="number" id="player2Age" name="player2Age" placeholder="Enter your age">
+                    <p id="player2AgeWarningMessageEmpty" class="warning">Age field cannot be empty.</p>
+                    <p id="player2AgeWarningMessageValue" class="warning">Invalid Age.</p>
+                    <br>
+                </form>
+            </div>
+        </div>
+    
+        <button id="submitButton" class="common-btn">Start Game</button>
+    </div>
+    
+</body>
+</html>

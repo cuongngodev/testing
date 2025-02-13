@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Chakra+Petch:wght@400;600&display=swap');
+
+/* General layout */
+body {
+    /* margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1c2c 0%, #4a1942 100%); */
+    margin: 0;
+    padding: 20px;
+    /* font-family: Arial, sans-serif; */
+    background: linear-gradient(135deg, #1a1c2c 0%, #4a1942 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+}
+/* ===== Logo Title ====== */
+h2, label{
+    font-size: 1.5em;
+    margin-bottom:25px;
+}
+
+.game-phase-container {
+    max-width: 1400px;
+    min-height: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2));
+    border-radius: 25px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.3);
+ }
+.game-header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+ }
+ 
+ .game-branding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+ }
+ 
+ .game-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffd700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+ }
+ 
+ .game-branding h1 {
+    color: #ffd700;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+ }
+
+/* ===== Player Container ====== */
+
+ .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 100px;
+
+ }
+ 
+ .player-column {
+    flex: 0 1 45%;
+    min-height: 450px;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+ }
+ 
+ /* Left column - Player 1 */
+ #player1Container {
+    border-left: 4px solid #ff6b6b;
+ }
+ 
+ /* Right column - Player 2 */
+ #player2Container {
+    border-left: 4px solid #4CAF50;
+ }
+ .playerInfo {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px;
+    max-width: 500px;
+    width: 320px;
+  height: 350px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+ }
+
+ .playerInfo {
+    color: #ffd700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ }
+ /* ======================= */
+
+ form label {
+    color: #fff;
+    display: block;
+    /* margin: 10px 0 5px; */
+    font-size: 1.1em;
+
+ }
+ input {
+    font-size: 16px;  /* Size when typing */
+    color: rgb(191, 184, 184);     /* Text color */
+    font-family: 'Press Start 2P', cursive;
+
+ }
+ ::placeholder {
+    font-size: 14px;  /* Placeholder text size */
+    color: rgba(255, 255, 255, 0.313);  /* Lighter color for placeholder */
+    
+ }
+ form input {
+    width: 95%;
+    padding: 12px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    margin-bottom: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .warning {
+    color: #ff4757;
+    font-size: 0.7em;
+    margin: 5px 0;
+ }
+ 
+ #togglePlayer2 {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+ }
+ 
+ #togglePlayer2 {
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: white;
+    margin: 20px;
+ }
+ 
+ #submitButton {
+    background: linear-gradient(45deg, #ff6b6b, #ff4757);
+    color: white;
+    margin-top: 30px;
+    padding: 15px 40px;
+ }
+ 
+ #togglePlayer2:hover, #submitButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ }
+ 
+
+/* ===== Logo Title ====== */
+.game-header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+ }
+ 
+ .game-branding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+ }
+ 
+ .game-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffd700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+ }
+ 
+ .game-branding h1 {
+    color: #ffd700;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+ }
+/* ======================= */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Players container styling */
+.players-container {
+   display: flex;
+   justify-content: space-between;
+   gap: 50px;
+   max-width: 1400px;
+   margin: 40px auto;
+   padding: 0 30px;
+   perspective: 1000px;
+   max-width: 900px;
+   height: 250px;
+}
+
+.player-card {
+   flex: 1;
+   max-width: 450px;
+   background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+   backdrop-filter: blur(12px);
+   border-radius: 20px;
+   padding: 10px;
+   box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+   border: 1px solid rgba(255,255,255,0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   transform-style: preserve-3d;
+}
+
+.player-card:hover {
+   transform: translateY(-10px) rotateX(5deg);
+   box-shadow: 0 15px 45px rgba(0,0,0,0.4);
+}
+
+.player-header h2 {
+   color: #ffd700;
+   text-align: center;
+   font-size: 1.5em;
+   margin-bottom: 25px;
+   text-shadow: 0 0 10px rgba(255,215,0,0.5);
+   letter-spacing: 2px;
+}
+.player-info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+ }
+.profile-image {
+    flex: 0 0 120px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 4px solid rgba(255, 215, 0, 0.5);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+    animation: profileHover 3s infinite ease-in-out;
+ }
+ .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+ }
+.profile-image:hover {
+   transform: scale(1.1) rotate(5deg);
+}
+
+.player-details {
+   color: white;
+   width: 183px;
+   font-size: 0.7em;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+   flex: 1;
+   padding: 15px;
+   background:rgba(255, 255, 255, 0.1);
+   border-radius: 12px;
+   backdrop-filter: blur(5px);
+}
+.player-details p {
+    margin: 10px 0;
+ }
+ .player-details span {
+    color: #ffd700;
+    /* font-weight: bold; */
+    margin-left: 10px;
+ }
+
+@keyframes profileHover {
+    0% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.1) rotate(5deg); }
+    100% { transform: scale(1) rotate(0deg); }
+ }
+/* Character  selection grid styling */
+.character-selection {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+ }
+.character-grid {
+    flex: 1;
+    max-width: 900px;
+    height: 1000px;
+    margin: auto;
+    min-height: 400px;
+    padding: 10px;
+    background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2));
+    border-radius: 25px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.3);
+ }
+ 
+ #select-turn {
+    color: #ffd700;
+    margin: 20px 0;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px rgba(255,215,0,0.5);
+    animation: glowText 2s infinite ease-in-out;
+ }
+ 
+ .squid-characters, .pokemon-characters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 5px;
+    padding: 20px;
+ }
+ 
+ .character-item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transform-style: preserve-3d;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ 
+ .character-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, rgba(255,215,0,0.2), rgba(255,107,107,0.2));
+    opacity: 0;
+    transition: opacity 0.3s;
+ }
+ 
+ .character-item:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+ }
+ 
+ .character-item:hover::after {
+    opacity: 1;
+ }
+ 
+ .character-item.selected {
+    transform: scale(1.1);
+    box-shadow: 0 25px 50px rgba(255,215,0,0.4);
+    border: 3px solid #ffd700;
+ }
+ 
+ .character-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+ }
+ 
+ .character-item:hover img {
+    transform: scale(1.1);
+ }
+ 
+ @keyframes glowText {
+    0%, 100% { text-shadow: 0 0 15px rgba(255,215,0,0.5); }
+    50% { text-shadow: 0 0 30px rgba(255,215,0,0.8); }
+ }
+/* Skin selection */
+.color-selection {
+    position: relative;
+   bottom: 150px; 
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2));
+   border-radius: 25px;
+   backdrop-filter: blur(12px);
+   box-shadow: 0 15px 45px rgba(0,0,0,0.3);
+   padding: 30px;
+   margin: 20px auto;
+   max-width: 900px;
+   z-index: 1;
+}
+
+.color-item {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.color-item:hover {
+    transform: scale(1.1);
+    border: 3px solid #007bff;
+}
+
+/* Game play */
+#game-container {
+    width: 1200px;
+    max-width: 1200px;
+    height:800px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    backdrop-filter: blur(50px);
+
+}
+
+#game-title {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#game-area {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#finish-line {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    background-color: #ffd700;
+    background: linear-gradient(to bottom, #eae9e3, #ff6b6b);
+    box-shadow: 0 0 10px #ffd700;
+
+}
+
+.player {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transition: left 0.1s ease;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.player img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#player1 {
+    top: 30%;
+    left: 0;
+}
+
+#player2 {
+    top: 70%;
+    left: 0;
+}
+/*
+#status {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    min-height: 36px; 
+    /* Prevents layout shift */
+
+
+
+/* #controls {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 20px;
+    line-height: 1.5;
+} */
+.game-controls {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2));
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    padding: 30px 50px;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.1);
+ }
+ 
+ #controls {
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    padding: 15px 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+ }
+#status {
+    color: #ffd700;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255,215,0,0.5);
+}
+.statusPlay{
+    position: absolute;
+   top: 70%;
+   left: 30%;
+}
+#start-btn, .common-btn, #restart-btn{
+    font-family: 'Press Start 2P', cursive;
+    position:relative;
+    left: 36%;
+    background: linear-gradient(45deg, #c66969, #d11424);
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 15px 40px;
+    color: white;
+    font-size: 1.5em;
+}
+#start-btn{
+    position:relative;
+    left: 2%;
+}
+#character-confirm, #togglePlayer2, #difficulty button {
+    font-family: 'Press Start 2P', cursive;
+    display: block;
+    /* width: 260px; */
+    margin: 30px auto;
+    background: linear-gradient(45deg, #aaa, #14aa48);
+    border-radius: 25px;
+    /* font-weight: bold; */
+    padding: 15px 40px;
+    color: white;
+    font-size: 1em;
+ }
+#start-btn:hover, .common-btn:hover, #restart-btn:hover, #character-confirm:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);}
+
+#start-btn:disabled, .common-btn {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#pikachu {
+    position: absolute;
+    top:-5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;  /* Adjust size as needed */
+    height: 125px; /* Adjust size as needed */
+    transition: transform 0.5s;
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.watching {
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.5)) !important;
+}
+
+#timer {
+    position: relative;
+    font:1em;
+    margin: 20px auto;
+    width: 200px;
+    background: rgb(240, 237, 34);
+    border-radius: 30px;
+    padding: 15px 25px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+ }
+ 
+ #timer::before {
+    content: '⏱️';
+    margin-right: 10px;
+    font-size: 1.2em;
+ }
+ 
+ #timeDisplay {
+    font-family: 'Digital-7', monospace;
+    font-size: 2em;
+    color: #ff4757;
+    text-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+    animation: pulse 1s infinite;
+ }
+ 
+ @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+ }
+ 
+ @font-face {
+    font-family: 'Digital-7';
+    src: url('../fonts/digital-7.ttf');
+ }
+
+ /* #difficulty button {
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    border-radius: 25px;
+    transition: transform 0.2s;
+} */
+
+#difficulty button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
